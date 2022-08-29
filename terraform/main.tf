@@ -33,8 +33,7 @@ provider "azuread" {
 locals {
   tags = {
     owner       = var.owner
-    environment = var.environment
-    namespace   = var.namespace
+    environment = var.env
   }
 }
 
@@ -45,7 +44,7 @@ module "naming" {
 }
 
 resource "azurerm_resource_group" "this" {
-  name     = "${module.naming.resource_group.name}-${var.location}-aks"
+  name     = "${module.naming.resource_group.name}-${var.location}-lz"
   location = var.location
 
   tags = local.tags
