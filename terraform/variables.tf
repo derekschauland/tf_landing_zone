@@ -5,7 +5,7 @@ variable "root_id" {
 
 variable "root_name" {
   type = string
-  default = "Enterprise-Scale"
+  default = "dereks-lz"
 }
 
 variable "location" {
