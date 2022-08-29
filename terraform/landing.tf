@@ -5,7 +5,7 @@ module "enterprise_scale" {
     providers = {
       azurerm = azurerm
       azurerm.connectivity = azurerm
-      azurerm.managment = azurerm
+      azurerm.management = azurerm
      
      }
 

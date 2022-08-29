@@ -3,6 +3,10 @@ terraform {
     azurerm = {
       source  = "hashicorp/azurerm"
       version = ">=3.0.0"
+      conficonfiguration_aliases = [ 
+        azurerm.connectivity,
+        azurerm.management,
+       ]
     }
     azuread = {
       source  = "hashicorp/azuread"
